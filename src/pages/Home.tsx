@@ -27,7 +27,8 @@ const features = [
 ];
 
 const Home = () => {
-  const pdfUrl = '/path/to/your/document.pdf'; // Replace with the actual path to your PDF file
+  // **IMPORTANT:** Replace this URL with the actual URL of your online PDF file
+  const pdfUrl = 'https://learning-korean.com/DL/Hangul-Table.pdf';
 
   return (
     <div>
@@ -66,8 +67,8 @@ const Home = () => {
           </p>
           <a
             href={pdfUrl}
-            target="_blank" // Opens the PDF in a new tab
-            rel="noopener noreferrer" // Recommended for security with target="_blank"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 px-8 py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors duration-300 inline-block"
           >
             Start Learning Now
